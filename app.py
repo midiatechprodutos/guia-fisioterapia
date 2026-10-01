@@ -1,4 +1,5 @@
 import streamlit as st
+import requests
 
 st.set_page_config(page_title="Guia de Fisioterapia Ortopedica", page_icon="🏥", layout="centered")
 
@@ -6,6 +7,17 @@ st.markdown("<h2 style='text-align: center; color: #2874A6;'>🏥 GUIA INTERATIV
 st.write("---")
 
 LINK_BASE = "https://githubusercontent.com"
+
+# Função inteligente que testa qual extensão de imagem existe de verdade no seu GitHub
+def obter_link_imagem_valido(nome_base):
+    extensoes = [".jpeg", ".jpg", ".png", ".JPEG", ".JPG", ".PNG"]
+    for ext in extensoes:
+        url_teste = f"{LINK_BASE}{nome_base}{ext}"
+        # Verifica se o link realmente existe na internet
+        resposta = requests.head(url_teste)
+        if resposta.status_code == 200:
+            return url_teste
+    return None
 
 banco_doencas = {
     "1. Sindrome do Impacto do Manguito Rotador": {
@@ -15,7 +27,7 @@ banco_doencas = {
         "testes": ["Teste de Neer", "Teste de Hawkins-Kennedy", "Teste de Jobe"],
         "agudo": "Analgesia e controle inflamatório (TENS e crioterapia).",
         "cronico": "Fortalecimento dos rotadores externos e estabilização escapular.",
-        "f1": "ombro.jpg", "f2": "Ombro1.png"
+        "img1": "ombro", "img2": "ombro1"
     },
     "2. Hernia de Disco Lombar": {
         "definicao": "Deslocamento do núcleo pulposo através de fissuras no anel fibroso do disco.",
@@ -24,7 +36,7 @@ banco_doencas = {
         "testes": ["Teste de Lasègue / Elevação da Perna Reta (SLR)", "Slump Test"],
         "agudo": "Técnicas de preferência de direção (Método Mackenzie) e tração suave.",
         "cronico": "Exercícios de controle motor profundo e mobilização neural.",
-        "f1": "coluna.jpeg", "f2": "coluna1.jpeg"
+        "img1": "coluna", "img2": "coluna1"
     },
     "3. Osteoartrose de Joelho (Gonartrose)": {
         "definicao": "Doença articular degenerativa crônica caracterizada pelo desgaste da cartilagem.",
@@ -33,7 +45,7 @@ banco_doencas = {
         "testes": ["Teste de estresse em varo/valgo", "Teste de compressão patelar (Clarke)"],
         "agudo": "Modulação da dor com recursos térmicos e crioterapia conforme o quadro.",
         "cronico": "Fortalecimento progressivo do quadríceps e treino de equilíbrio.",
-        "f1": "joelho.jpeg", "f2": "joelho 1.jpeg"
+        "img1": "joelho", "img2": "joelho1"
     },
     "4. Sindrome do Tunel do Carpo": {
         "definicao": "Neuropatia compressiva decorrente da compressão do nervo mediano no punho.",
@@ -42,7 +54,7 @@ banco_doencas = {
         "testes": ["Teste de Phalen", "Sinal de Tinel"],
         "agudo": "Uso de órtese de posicionamento noturno e TENS.",
         "cronico": "Mobilização manual dos ossos do carpo e deslizamento neural.",
-        "f1": "punho.jpeg", "f2": "punho1.jpeg"
+        "img1": "punho", "img2": "punho1"
     },
     "5. Fascite Plantar": {
         "definicao": "Processo degenerativo ou inflamatório da fáscia plantar por microtraumas proximal.",
@@ -51,7 +63,7 @@ banco_doencas = {
         "testes": ["Teste do Molinete (Windlass Test)", "Palpação focalizada"],
         "agudo": "Crioterapia local e liberação miofascial plantar.",
         "cronico": "Alongamentos do complexo gastrocnêmio-sóleo e fortalecimento intrínseco.",
-        "f1": "pe.jpeg", "f2": "pe1.jpeg"
+        "img1": "pe", "img2": "pe1"
     }
 }
 
@@ -74,7 +86,16 @@ if escolha:
     
     st.write("---")
     st.write("**🖼️ Referências Visuais:**")
+    
+    # Busca dinamicamente os links válidos na internet
+    link_foto1 = obter_link_imagem_valido(dados["img1"])
+    link_foto2 = obter_link_imagem_valido(dados["img2"])
+    
     col1, col2 = st.columns(2)
-    with col1: st.image(LINK_BASE + dados["f1"], use_container_width=True)
-    with col2: st.image(LINK_BASE + dados["f2"], use_container_width=True)
-        
+    with col1:
+        if link_foto1: st.image(link_foto1, use_container_width=True)
+        else: st.write(f"*(Imagem '{dados['img1']}' não encontrada no GitHub)*")
+    with col2:
+        if link_foto2: st.image(link_foto2, use_container_width=True)
+        else: st.write(f"*(Imagem '{dados['img2']}' não encontrada no GitHub)*")
+            
