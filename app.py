@@ -44,7 +44,7 @@ banco_doencas = {
         "definicao": "Doença articular degenerativa crônica caracterizada pelo desgaste progressivo da cartilagem articular do joelho, remodelação óssea (osteófitos) e inflamação sinovial secundária.",
         "clinica": "Degradação da matriz extracelular da cartilagem hialina nos compartimentos tibiofemoral e/ou patelofemoral, levando à perda do espaço articular e fricção osso com osso, gerando esclerose subcondral e dor periosteal.",
         "sintomas": ["Dor mecânica (piora ao carregar peso ou caminhar e alivia com repouso)", "Rigidez articular matinal temporária (geralmente dura menos de 30 minutos)", "Crepitação palpável ou audível e redução da amplitude de movimento."],
-        "testes": ["Teste de estresse em varo/valgo", "Teste de compressão patelar (Clarke)", "Palpação das interlinhas articulares"],
+        "testes": ["Teste de estresse em varo/valgo", "Teste de compression patelar (Clarke)", "Palpação das interlinhas articulares"],
         "tratamento_agudo": "Modulação da dor com recursos térmicos (calor na fase crônica para diminuir rigidez), hidroterapia para redução do impacto gravitacional e eletroanalgesia.",
         "tratamento_cronico": "Fortalecimento progressivo do quadríceps (essencial para absorção de carga), alongamento de isquiotibiais e tríceps sural, e treino de equilíbrio/propriocepção para estabilizar dinamicamente.",
         "foto1": "joelho", "foto2": "joelho 1"
@@ -54,7 +54,7 @@ banco_doencas = {
         "clinica": "O túnel do carpo é delimitado profundamente pelos ossos do carpo e superficialmente pelo retináculo dos flexores (ligamento carpal transverso). Qualquer processo inflamatório nos 9 tendões flexores reduz o espaço e comprime mecanicamente o nervo mediano.",
         "sintomas": ["Parestesia e hipoestesia na região palmar dos dedos polegar, indicador, médio e metade lateral do anular", "Piora noturna acentuada dos sintomas", "Fraqueza na pinça digital e atrofia da musculatura tenar em casos graves."],
         "testes": ["Teste de Phalen (flexão máxima dos punhos por 60 segundos)", "Sinal de Tinel (percussão leve sobre o canal do carpo)"],
-        "tratamento_agudo": "Uso de órtese de posicionamento noturno (punho em neutro), TENS para controle da dor e repouso de atividades manuais repetitivas.",
+        "tratamento_agudo": "Uso de órtese de posicionamento noturno (punho in neutro), TENS para controle da dor e repouso de atividades manuais repetitivas.",
         "tratamento_cronico": "Mobilização manual dos ossos do carpo, exercícios de mobilização/deslizamento do nervo mediano, alongamento dos flexores do punho e dedos, orientações ergonômicas.",
         "foto1": "punho", "foto2": "punho1"
     },
@@ -85,4 +85,4 @@ banco_doencas = {
         "tratamento_cronico": "Exercícios de fortalecimento de fibulares (eversores), ganho de amplitude em dorsiflexão e treinamento proprioceptivo em superfícies instáveis (disco de equilíbrio) para prevenção de instabilidade crônica.",
         "foto1": "tornozelo", "foto2": "tornozelo1"
     },
-  
+    
