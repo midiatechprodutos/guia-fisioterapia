@@ -27,7 +27,7 @@ banco_doencas = {
         "clinica": "O espaço subacromial é delimitado superiormente pelo acrômio, processo coracoide e ligamento coracoacromial; inferiormente pela cabeça do úmero. Alterações no formato do acrômio (ganchoso) ou fraqueza muscular diminuem esse espaço, gerando atrito e inflamação crônica.",
         "sintomas": ["Dor profunda no ombro (frequentemente pior à noite ou ao deitar sobre o braço)", "Incapacidade ou dor ao elevar o braço acima de 90°", "Perda progressiva de força funcional."],
         "testes": ["Teste de Neer", "Teste de Hawkins-Kennedy", "Teste de Jobe (isometria do supraespinhal)"],
-        "tratamento_agudo": "Analgesia e controle inflamatório (TENS e crioterapia), repouso relativo de movimentos acima da cabeça.",
+        "tratamento_agudo": "Analgesia and controle inflamatório (TENS e crioterapia), repouso relativo de movimentos acima da cabeça.",
         "tratamento_cronico": "Fortalecimento dos rotadores externos (infraespinhal e redondo menor) e depressores da cabeça umeral (subescapular), associado à estabilização escapular (serrátil anterior e trapézio inferior) para readequar a biomecânica.",
         "foto1": "imagem-lesao-manguito-1-1", "foto2": "ombro1"
     },
@@ -44,7 +44,7 @@ banco_doencas = {
         "definicao": "Doença articular degenerativa crônica caracterizada pelo desgaste progressivo da cartilagem articular do joelho, remodelação óssea (osteófitos) e inflamação sinovial secundária.",
         "clinica": "Degradação da matriz extracelular da cartilagem hialina nos compartimentos tibiofemoral e/ou patelofemoral, levando à perda do espaço articular e fricção osso com osso, gerando esclerose subcondral e dor periosteal.",
         "sintomas": ["Dor mecânica (piora ao carregar peso ou caminhar e alivia com repouso)", "Rigidez articular matinal temporária (geralmente dura menos de 30 minutos)", "Crepitação palpável ou audível e redução da amplitude de movimento."],
-        "testes": ["Teste de estresse em varo/valgo", "Teste de compression patelar (Clarke)", "Palpação das interlinhas articulares"],
+        "testes": ["Teste de estresse em varo/valgo", "Teste de compressão patelar (Clarke)", "Palpação das interlinhas articulares"],
         "tratamento_agudo": "Modulação da dor com recursos térmicos (calor na fase crônica para diminuir rigidez), hidroterapia para redução do impacto gravitacional e eletroanalgesia.",
         "tratamento_cronico": "Fortalecimento progressivo do quadríceps (essencial para absorção de carga), alongamento de isquiotibiais e tríceps sural, e treino de equilíbrio/propriocepção para estabilizar dinamicamente.",
         "foto1": "joelho", "foto2": "joelho 1"
@@ -54,7 +54,7 @@ banco_doencas = {
         "clinica": "O túnel do carpo é delimitado profundamente pelos ossos do carpo e superficialmente pelo retináculo dos flexores (ligamento carpal transverso). Qualquer processo inflamatório nos 9 tendões flexores reduz o espaço e comprime mecanicamente o nervo mediano.",
         "sintomas": ["Parestesia e hipoestesia na região palmar dos dedos polegar, indicador, médio e metade lateral do anular", "Piora noturna acentuada dos sintomas", "Fraqueza na pinça digital e atrofia da musculatura tenar em casos graves."],
         "testes": ["Teste de Phalen (flexão máxima dos punhos por 60 segundos)", "Sinal de Tinel (percussão leve sobre o canal do carpo)"],
-        "tratamento_agudo": "Uso de órtese de posicionamento noturno (punho in neutro), TENS para controle da dor e repouso de atividades manuais repetitivas.",
+        "tratamento_agudo": "Uso de órtese de posicionamento noturno (punho em neutro), TENS para controle da dor e repouso de atividades manuais repetitivas.",
         "tratamento_cronico": "Mobilização manual dos ossos do carpo, exercícios de mobilização/deslizamento do nervo mediano, alongamento dos flexores do punho e dedos, orientações ergonômicas.",
         "foto1": "punho", "foto2": "punho1"
     },
@@ -78,11 +78,10 @@ banco_doencas = {
     },
     "7. Entorse de Tornozelo (Inversão)": {
         "definicao": "Lesão por estiramento ou ruptura dos ligamentos da região lateral do tornozelo (principalmente talofibular anterior) devido ao movimento excessivo de inversão.",
-        "clinica": "Ocorre quando o pé dobra excessivamente para dentro com a planta voltada para o outro pé. O ligamento talofibular anterior é o mais fraco do complexo lateral e o primeiro a sofrer estiramento ou ruptura.",
+        "clinica": "Ocorre quando o pé dobra excessivamente para dentro com a planta voltada para o outro pé. Oligamento talofibular anterior é o mais fraco do complexo lateral e o primeiro a sofrer estiramento ou ruptura.",
         "sintomas": ["Dor na linha articular lateral do tornozelo", "Equimose (mancha roxa) e edema localizados nas primeiras 24 horas", "Dificuldade importante para realizar a marcha ou descarregar peso no calcanhar."],
         "testes": ["Teste da Gaveta Anterior do Tornozelo", "Teste do Estresse em Inversão (Talar Tilt)"],
         "tratamento_agudo": "Aplicação imediata de crioterapia, compressão elástica para controle do edema, elevação do membro e repouso relativo com descarga de peso conforme tolerância.",
         "tratamento_cronico": "Exercícios de fortalecimento de fibulares (eversores), ganho de amplitude em dorsiflexão e treinamento proprioceptivo em superfícies instáveis (disco de equilíbrio) para prevenção de instabilidade crônica.",
         "foto1": "tornozelo", "foto2": "tornozelo1"
     },
-    
